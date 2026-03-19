@@ -149,6 +149,60 @@ input, button, select, textarea {
   color: #5A8CFF;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .page-account .inner-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-account .inner-form {
+    width: 90%;
+    border-radius: 12px;
+    padding: 20px 15px;
+  }
+
+  .page-account .inner-form .inner-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .page-account .inner-form .inner-desc {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .page-account .inner-form form .inner-group {
+    gap: 5px;
+  }
+
+  .page-account .inner-form form .inner-group .inner-label {
+    font-size: 14px;
+  }
+
+  .page-account .inner-form form .inner-group .inner-control {
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .page-account .inner-form form .inner-meta .inner-link {
+    font-size: 14px;
+  }
+
+  .page-account .inner-form form .inner-button {
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .page-account .inner-form .inner-more span {
+    font-size: 14px;
+  }
+
+  .page-account .inner-form .inner-more a {
+    font-size: 14px;
+  }
+}
 /* End Page Account */
 
 /* checkbox-wrapper-28 */
@@ -227,3 +281,14 @@ input, button, select, textarea {
     stroke-dashoffset: 0;
   }
 }
+
+@media (max-width: 576px) {
+  .checkbox-wrapper-28 {
+    --size: 20px;
+  }
+
+  .checkbox-wrapper-28 label {
+    font-size: 14px;
+  }
+}
+/* End checkbox-wrapper-28 */
