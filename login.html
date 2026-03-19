@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <h1>Trang đăng nhập</h1>
+    <div class="page-account">
+      <div class="inner-form"> 
+        <div class="inner-title">Đăng nhập</div>
+        <div class="inner-desc">Vui lòng nhập email và mật khẩu để tiếp tục</div>
+        <form>
+          <div class="inner-group"> 
+            <label class="inner-label" for="email">Email</label>
+            <input class="inner-control" type="email" id="email" placeholder="Ví dụ: messi@gmail.com">
+          </div>
+          <div class="inner-group"> 
+            <label class="inner-label" for="password">Mật khẩu</label>
+            <input class="inner-control" type="password" id="password">
+          </div>
+          <div class="inner-meta">
+            <div class="checkbox-wrapper-28">
+              <input class="promoted-input-checkbox" type="checkbox" id="rememberPassword"/>
+              <svg>
+                <use xlink:href="#checkmark-28"></use>
+              </svg>
+              <label for="rememberPassword">Nhớ mật khẩu</label>
+              <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="checkmark-28" viewBox="0 0 24 24">
+                  <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
+                </symbol>
+              </svg>
+            </div><a class="inner-link" href="#">Quên mật khẩu?</a>
+          </div>
+          <button class="inner-button">Đăng Nhập</button>
+        </form>
+        <div class="inner-more"> <span>Bạn chưa có tài khoản?</span><a href="#">Tạo tài khoản</a></div>
+      </div>
+    </div>
   </body>
 </html>

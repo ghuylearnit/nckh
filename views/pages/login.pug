@@ -1,9 +1,23 @@
-doctype html
-html
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Đăng nhập
-    link(rel="stylesheet", href="assets/css/style.css")
-  body
-    h1 Trang đăng nhập
+extends ../layouts/account.pug
+include ../mixins/checkbox.pug
+
+block title 
+  title Đăng nhập
+
+block main
+  .inner-title Đăng nhập
+  .inner-desc Vui lòng nhập email và mật khẩu để tiếp tục
+  form
+    .inner-group 
+      label(for="email" class="inner-label") Email
+      input(type="email" id="email" class="inner-control" placeholder="Ví dụ: messi@gmail.com")
+    .inner-group 
+      label(for="password" class="inner-label") Mật khẩu
+      input(type="password" id="password" class="inner-control")
+    .inner-meta
+      +checkbox-28("rememberPassword", "Nhớ mật khẩu")
+      a.inner-link(href="#") Quên mật khẩu?
+    button.inner-button Đăng Nhập
+  .inner-more 
+    span Bạn chưa có tài khoản?
+    a(href="#") Tạo tài khoản

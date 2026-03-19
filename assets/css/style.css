@@ -21,3 +21,209 @@ a {
 input, button, select, textarea {
   outline: none;
 }
+
+/* Page Account */
+.page-account {
+  background-image: url(../images/bg-account.svg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+}
+
+.page-account .inner-form {
+  border: 0.3px solid #B9B9B9;
+  background-color: #FFFFFF;
+  width: 630px;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 90px 57px;
+}
+
+.page-account .inner-form .inner-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-account .inner-form .inner-desc {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: 40px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.page-account .inner-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.page-account .inner-form form .inner-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page-account .inner-form form .inner-group .inner-label {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  color: var(--color-text);
+}
+
+.page-account .inner-form form .inner-group .inner-control {
+  height: 56px;
+  border: 1px solid #D8D8D8;
+  background-color: #F1F4F9;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  width: 100%;
+}
+
+.page-account .inner-form form .inner-group .inner-control::placeholder {
+  color: #A6A6A6;
+}
+
+.page-account .inner-form form .inner-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-account .inner-form form .inner-meta .inner-link {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.6;
+  color: var(--color-text);
+}
+
+.page-account .inner-form form .inner-meta .inner-link:hover {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+.page-account .inner-form form .inner-button {
+  width: 100%;
+  height: 56px;
+  background-color: var(--color-main);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.page-account .inner-form form .inner-button:hover {
+  opacity: 1;
+}
+
+.page-account .inner-form .inner-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-account .inner-form .inner-more span {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.65;
+  color: var(--color-text);
+}
+
+.page-account .inner-form .inner-more a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #5A8CFF;
+  text-decoration: underline;
+}
+/* End Page Account */
+
+/* checkbox-wrapper-28 */
+.checkbox-wrapper-28 {
+  --size: 24px;
+  position: relative;
+}
+
+.checkbox-wrapper-28 *,
+.checkbox-wrapper-28 *:before,
+.checkbox-wrapper-28 *:after {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-28 .promoted-input-checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.checkbox-wrapper-28 input:checked ~ svg {
+  height: calc(var(--size) * 0.6);
+  -webkit-animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+          animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+}
+.checkbox-wrapper-28 label:active::after {
+  background-color: #e6e6e6;
+}
+.checkbox-wrapper-28 label {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.6;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.checkbox-wrapper-28 label:after {
+  content: "";
+  height: var(--size);
+  width: var(--size);
+  margin-right: 12px;
+  float: left;
+  border: 0.6px solid #A3A3A3;
+  border-radius: 6px;
+  transition: 0.15s all ease-out;
+}
+.checkbox-wrapper-28 svg {
+  stroke: #656565;
+  stroke-width: 3px;
+  height: 0;
+  width: calc(var(--size) * 0.6);
+  position: absolute;
+  left: calc(var(--size) * 0.21);
+  top: calc(var(--size) * 0.2);
+  stroke-dasharray: 33;
+}
+
+@-webkit-keyframes draw-checkbox-28 {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-checkbox-28 {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,17 @@
+mixin checkbox-28(id, label)
+  .checkbox-wrapper-28
+    input.promoted-input-checkbox(type="checkbox" id=id)
+    svg
+      use(xlink:href="#checkmark-28")
+    label(for=id) #{label}
+    svg(
+      style="display: none" 
+      xmlns="http://www.w3.org/2000/svg"
+      )
+      symbol#checkmark-28(viewBox="0 0 24 24")
+        path(
+          d="M22.9 3.7l-15.2 16.6-6.6-7.1" 
+          fill="none" 
+          stroke-miterlimit="10" 
+          stroke-linecap="round"
+          )
