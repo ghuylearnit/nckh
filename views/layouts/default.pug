@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title
+    link(rel="stylesheet", href="assets/css/style.css")
+  body
+    //- Header
+    include ../partials/header.pug
+    //- End Header 
+
+    //- Sider 
+    include ../partials/sider.pug
+    //- End Sider 
+
+    //- Main 
+    main.main
+      block main 
+    //- End Main 

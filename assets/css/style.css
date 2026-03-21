@@ -292,3 +292,40 @@ input, button, select, textarea {
   }
 }
 /* End checkbox-wrapper-28 */
+
+/* Header  */
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+/* End Header  */
+
+/* Sider  */
+.sider {
+  background-color: #FFFFFF;
+  width: 240px;
+  border-right: 1px solid #E0E0E0;
+  min-height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow-y: auto;
+}
+/* End Sider  */
+
+/* Main  */
+.main {
+  background-color: #F5F6FA;
+  width: calc(100% - 240px);
+  height: calc(100vh - 70px);
+  position: absolute;
+  top: 70px;
+  left: 240px;
+}
+/* End Main  */
