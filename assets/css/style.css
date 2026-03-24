@@ -450,5 +450,15 @@ input, button, select, textarea {
   position: absolute;
   top: 70px;
   left: 240px;
+  padding: 30px;
 }
 /* End Main  */
+
+/* Box Title  */
+.box-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+}
+/* End Box Title  */
