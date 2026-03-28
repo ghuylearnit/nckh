@@ -462,3 +462,51 @@ input, button, select, textarea {
   color: var(--color-text);
 }
 /* End Box Title  */
+
+/* Section-1 */
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.section-1 .inner-item {
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-1 .inner-item .inner-icon{
+  width: 60px;
+  height: 60px;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-main);
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.section-1 .inner-item .inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.section-1 .inner-item .inner-text .inner-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.section-1 .inner-item .inner-text .inner-number {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
+}
+/* End Section-1 */
