@@ -724,3 +724,48 @@ input, button, select, textarea {
   color: #2c71bb;
 }
 /* End Severity */
+
+/* Section 4 */
+.section-4 {
+  margin-bottom: 15px;
+}
+
+.section-4 .inner-wrap {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 14px;
+}
+
+.section-4 .inner-item {
+  padding: 24px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  border-right: 0.3px solid rgba(151, 151, 151, 0.6862);
+}
+
+.section-4 .inner-item:last-child {
+  border-right: none;
+}
+
+.section-4 .inner-item select, .section-4 .inner-item input {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  border: 0;
+  cursor: pointer;
+}
+
+.section-4 .inner-item input {
+  width: 105px;
+}
+
+.section-4 .inner-reset {
+  color: #EA0234;
+  cursor: pointer;
+}
+/* End Section 4 */
