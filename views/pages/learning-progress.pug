@@ -1,4 +1,5 @@
 extends ../layouts/default.pug
+include ../mixins/checkbox.pug
 
 block title 
   title Theo dõi tiến độ học tập
@@ -39,4 +40,33 @@ block main
         | Xóa bộ lọc
   //- End Section 4
 
-  
+  //- Section 3
+  .section-3
+    .table-2 
+      table
+        thead 
+          tr 
+            th 
+            th MSSV
+            th Họ tên
+            th Lớp
+            th Tín chỉ tích lũy
+            th Điểm trung bình (GPA)
+            th Trạng thái
+            th Hành động
+        tbody 
+          tr 
+            td
+              +checkbox-28("checkbox1", "")
+            td 3122411001
+            td Ronaldo
+            td DCT122C1
+            td 120
+            td 1.8
+            td 
+              .severity.severity-red <i class="fa-solid fa-xmark"></i>
+            td 
+              .box-actions 
+                a(href="#" class="inner-detail") Xem chi tiết
+
+  //- End Section 3
