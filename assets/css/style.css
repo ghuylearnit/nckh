@@ -769,3 +769,26 @@ input, button, select, textarea {
   cursor: pointer;
 }
 /* End Section 4 */
+
+/* Section 6 */
+.section-6 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section-6 .inner-export {
+  border: none;
+  background-color: var(--color-main);
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+/* End Section 6 */
