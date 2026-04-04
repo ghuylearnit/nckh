@@ -2,10 +2,10 @@ extends ../layouts/default.pug
 include ../mixins/checkbox.pug
 
 block title 
-  title Theo dõi tiến độ học tập
+  title Dự kiến tốt nghiệp
 
 block main
-  .box-title Theo dõi tiến độ học tập
+  .box-title Dự kiến tốt nghiệp
 
   //- Section 4
   .section-4 
@@ -40,50 +40,22 @@ block main
         | Xóa bộ lọc
   //- End Section 4
 
-  //- Section 5
-  .section-3
-    .table-2 
-      table
-        thead 
-          tr 
-            th 
-            th MSSV
-            th Họ tên
-            th Lớp
-            th Khoa
-            th Khoá
-            th Tín chỉ tích lũy
-            th Điểm trung bình (GPA)
-            th Trạng thái
-            th Hành động
-        tbody 
-          tr 
-            td
-              +checkbox-28("checkbox1", "")
-            td 3122411001
-            td Ronaldo
-            td DCT122C1
-            td Công nghệ thông tin
-            td K22
-            td 120
-            td 1.8
-            td 
-              .severity.severity-red <i class="fa-solid fa-xmark"></i>
-            td 
-              .box-actions 
-                a(href="#" class="inner-detail") Xem chi tiết
+  //- Section 8
+  .section-8
+    .inner-wrap 
+      form.inner-change-status 
+        select(name="")
+          option(value="") Tất cả
+          option(value="") Đúng hạn
+          option(value="") Nguy cơ trễ tiến độ
+          option(value="") Tốt nghiệp sớm
+          option(value="") Chưa đủ điều kiện tốt nghiệp
+        button Áp dụng
+      form.inner-search 
+        button <i class="fa-solid fa-magnifying-glass"></i>
+        input(type="text" placeholder="Tìm kiếm MSSV/Tên sinh viên")
 
-  //- End Section 5
-
-  //- Section 6
-  .section-6 
-    button.inner-report 
-      <i class="fa-solid fa-arrow-right-from-bracket"></i>
-      | Gửi cảnh báo học vụ
-    button.inner-report 
-      <i class="fa-solid fa-file-export"></i>
-      | Xuất báo cáo
-  //- End Section 6
+  //- End Section 8
 
   //- Section-7 
   .section-7 

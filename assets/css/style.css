@@ -858,3 +858,76 @@ input, button, select, textarea {
   cursor: pointer;
 }
 /* End Section 7 */
+
+/* Section 8 */
+.section-8 {
+  margin-bottom: 30px;
+}
+
+.section-8 .inner-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.section-8 .inner-change-status {
+  background-color: #FFFFFF;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+}
+
+.section-8 .inner-change-status select {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  border: 0;
+  padding: 24px 0 24px 24px;
+}
+
+.section-8 .inner-change-status button {
+  padding: 24px;
+  margin-left: 24px;
+  border: 0;
+  border-left: 0.3px solid rgba(151, 151, 151, 0.68);
+  color: #EA0234;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section-8 .inner-search {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 14px;
+  padding: 24px;
+  max-width: 366px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.section-8 .inner-search button {
+  font-size: 20px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section-8 .inner-search input {
+  flex: 1;
+  border: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.section-8 .inner-search input::placeholder {
+  color: #979797;
+}
+/* End Section 8 */
