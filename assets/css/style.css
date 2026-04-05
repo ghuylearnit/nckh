@@ -867,6 +867,8 @@ input, button, select, textarea {
 .section-8 .inner-wrap {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .section-8 .inner-change-status {
@@ -930,4 +932,52 @@ input, button, select, textarea {
 .section-8 .inner-search input::placeholder {
   color: #979797;
 }
+
+@media (max-width: 1200px) {
+  .section-8 .inner-change-status select {
+    padding: 10px 0 10px 10px;
+  }
+
+  .section-8 .inner-change-status button {
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .section-8 .inner-search {
+    padding: 10px;
+  }
+
+  .section-8 .inner-search input {
+    font-size: 12px;
+  }
+}
+
 /* End Section 8 */
+
+/* Tag  */
+.tag {
+  display: inline-block;
+  background-color: #B9B9B9;
+  border-radius: 4.5px;
+  padding: 6px 22px;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.tag-orange {
+  color: #FFA756;
+  background-color: #FEECDC;
+}
+
+.tag-green {
+  color: #00B69B;
+  background-color: #CBEFEA;
+}
+
+.tag-red {
+  color: #EF3826;
+  background-color: #FBD6D3;
+}
+/* End Tag  */
+
