@@ -981,3 +981,56 @@ input, button, select, textarea {
 }
 /* End Tag  */
 
+/* Section 9 */
+.section-9 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-9 .inner-left, .section-9 .inner-right {
+  background-color: #FFFFFF;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 14px;
+  padding: 20px 30px;
+  height: 100%;
+}
+
+.section-9 .inner-left {
+  display: flex;
+  gap: 20px;
+}
+
+.section-9 .inner-info, .section-9 .inner-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.section-9 .inner-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section-9 .inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .section-9 {
+    grid-template-columns: 1fr;
+  }
+}
+/* End Section 9 */
+

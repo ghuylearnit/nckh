@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dự kiến tốt nghiệp</title>
+    <title>Các môn học còn thiếu</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   </head>
@@ -36,7 +36,7 @@
       </ul>
     </nav>
     <main class="main">
-      <div class="box-title">Dự kiến tốt nghiệp</div>
+      <div class="box-title">Các môn học còn thiếu</div>
       <div class="section-4"> 
         <div class="inner-wrap"> 
           <div class="inner-item">
@@ -76,21 +76,27 @@
         </div>
       </div>
       <div class="section-8">
-        <div class="inner-wrap"> 
-          <form class="inner-change-status"> 
-            <select name="">
-              <option value="">Tất cả</option>
-              <option value="">Đúng hạn</option>
-              <option value="">Nguy cơ trễ tiến độ</option>
-              <option value="">Tốt nghiệp sớm</option>
-              <option value="">Chưa đủ điều kiện tốt nghiệp</option>
-            </select>
-            <button>Áp dụng</button>
-          </form>
+        <div class="inner-wrap">
           <form class="inner-search"> 
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
             <input type="text" placeholder="Tìm kiếm MSSV/Tên sinh viên">
           </form>
+        </div>
+      </div>
+      <div class="section-9"> 
+        <div class="inner-left">
+          <div class="inner-image"> <img src="assets/images/avatar-1.jpg" alt=""></div>
+          <div class="inner-info">
+            <div class="inner-name">Ronaldo</div>
+            <div class="inner-id">3122411001</div>
+            <div class="inner-class">DCT122C1</div>
+            <div class="inner-major">Công nghệ thông tin</div>
+          </div>
+        </div>
+        <div class="inner-right">
+          <div class="inner-credit">Tín chỉ đã tích luỹ: 105/120</div>
+          <div class="inner-missing">Tin chỉ còn thiếu: 15</div>
+          <div class="inner-gpa">GPA hiện tại: 1.8</div>
         </div>
       </div>
       <div class="section-3">
@@ -98,46 +104,51 @@
           <table>
             <thead> 
               <tr> 
-                <th> </th>
-                <th>MSSV</th>
-                <th>Họ tên</th>
-                <th>Lớp</th>
-                <th>Tiến độ tín chỉ</th>
-                <th>GPA hiện tại</th>
-                <th>Học kỳ dự kiến TN</th>
-                <th>Trạng thái</th>
-                <th>Độ tin cậy</th>
-                <th>Hành động</th>
+                <th>Mã môn học</th>
+                <th>Tên môn học</th>
+                <th>Số tín chỉ</th>
+                <th>Môn tiên quyết</th>
+                <th>Dự kiến mở lớp</th>
               </tr>
             </thead>
             <tbody> 
               <tr> 
-                <td>
-                  <div class="checkbox-wrapper-28">
-                    <input class="promoted-input-checkbox" type="checkbox" id="checkbox1"/>
-                    <svg>
-                      <use xlink:href="#checkmark-28"></use>
-                    </svg>
-                    <label for="checkbox1"></label>
-                    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-                      <symbol id="checkmark-28" viewBox="0 0 24 24">
-                        <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
-                      </symbol>
-                    </svg>
-                  </div>
+                <td>MMH001</td>
+                <td>Nhập môn công nghệ thông tin</td>
+                <td>4</td>
+                <td> 
+                  <div class="tag tag-red">Bắt buộc</div>
                 </td>
-                <td>3122411001</td>
-                <td>Ronaldo</td>
-                <td>DCT122C1</td>
-                <td>105/120</td>
-                <td>2.8 </td>
                 <td>HK2 - 2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="table-2"> 
+          <table>
+            <thead> 
+              <tr> 
+                <th>Ngoại ngữ</th>
+                <th>Tin học cơ bản</th>
+                <th>Giáo dục thể chất</th>
+                <th>Giáo dục Quốc phòng</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr> 
                 <td> 
-                  <div class="tag tag-red">Nguy cơ trễ tiến độ</div>
+                  <div class="severity severity-green"><i class="fa-solid fa-check"></i></div>
                 </td>
-                <td>85%</td>
                 <td> 
-                  <div class="box-actions"> <a class="inner-distance" href="#">Xem lộ trình</a></div>
+                  <div class="severity severity-green"><i class="fa-solid fa-check"></i></div>
+                </td>
+                <td> 
+                  <div class="severity severity-red"><i class="fa-solid fa-xmark"></i></div>
+                </td>
+                <td> 
+                  <div class="severity severity-green"><i class="fa-solid fa-check"></i></div>
                 </td>
               </tr>
             </tbody>
@@ -146,7 +157,9 @@
       </div>
       <div class="section-6"> 
         <button class="inner-report">
-           <i class="fa-solid fa-arrow-right-from-bracket"></i>Gửi cảnh báo </button>
+           <i class="fa-solid fa-arrow-right-from-bracket"></i>Gửi nhắc nhở</button>
+        <button class="inner-report">
+           <i class="fa-solid fa-file-export"></i>Xuất lộ trình</button>
       </div>
       <div class="section-7"> 
         <div class="inner-text">Hiển thị 1 - 1 của 1</div>

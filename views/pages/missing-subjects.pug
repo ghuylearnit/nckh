@@ -1,0 +1,131 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+
+block title 
+  title Các môn học còn thiếu
+
+block main
+  .box-title Các môn học còn thiếu
+
+  //- Section 4
+  .section-4 
+    .inner-wrap 
+      .inner-item 
+        <i class="fa-solid fa-filter"></i>
+        | Bộ lọc
+      .inner-item
+        select(name="")
+          option(value="") MSSV
+          option(value="") 3122411001
+          option(value="") 3122411002
+      .inner-item 
+        select(name="")
+          option(value="") Lớp
+          option(value="") DCT122C1
+          option(value="") DCT122C2
+      .inner-item 
+        select(name="")
+          option(value="") Khoa
+          option(value="") Công nghệ thông tin
+          option(value="") Điện tử viễn thông
+          option(value="") Sư phạm Anh
+      .inner-item 
+        select(name="")
+          option(value="") Khoá
+          option(value="") K22
+          option(value="") K23 
+          option(value="") K24
+      .inner-item.inner-reset
+        <i class="fa-solid fa-rotate-left"></i>
+        | Xóa bộ lọc
+  //- End Section 4
+
+  //- Section 8
+  .section-8
+    .inner-wrap
+      form.inner-search 
+        button <i class="fa-solid fa-magnifying-glass"></i>
+        input(type="text" placeholder="Tìm kiếm MSSV/Tên sinh viên")
+
+  //- End Section 8
+
+  //- Section 9
+  .section-9 
+    .inner-left
+      .inner-image 
+        img(src="assets/images/avatar-1.jpg", alt="")
+      .inner-info
+        .inner-name Ronaldo
+        .inner-id 3122411001
+        .inner-class DCT122C1
+        .inner-major Công nghệ thông tin
+    .inner-right
+      .inner-credit Tín chỉ đã tích luỹ: 105/120
+      .inner-missing Tin chỉ còn thiếu: 15
+      .inner-gpa GPA hiện tại: 1.8
+  //- End Section 9
+
+  //- Section 5
+  .section-3
+    .table-2 
+      table
+        thead 
+          tr 
+            th Mã môn học
+            th Tên môn học
+            th Số tín chỉ
+            th Môn tiên quyết
+            th Dự kiến mở lớp
+        tbody 
+          tr 
+            td MMH001
+            td Nhập môn công nghệ thông tin
+            td 4
+            td 
+              .tag.tag-red Bắt buộc
+            td HK2 - 2027
+  //- End Section 5
+
+  //- Section 5
+  .section-3
+    .table-2 
+      table
+        thead 
+          tr 
+            th Ngoại ngữ
+            th Tin học cơ bản
+            th Giáo dục thể chất
+            th Giáo dục Quốc phòng
+        tbody 
+          tr 
+            td 
+              .severity.severity-green <i class="fa-solid fa-check"></i>
+            td 
+              .severity.severity-green <i class="fa-solid fa-check"></i>
+            td 
+              .severity.severity-red <i class="fa-solid fa-xmark"></i>
+            td 
+              .severity.severity-green <i class="fa-solid fa-check"></i>
+  //- End Section 5
+
+  //- Section 6
+  .section-6 
+    button.inner-report 
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      | Gửi nhắc nhở
+    button.inner-report 
+      <i class="fa-solid fa-file-export"></i>
+      | Xuất lộ trình
+  //- End Section 6
+
+  //- Section-7 
+  .section-7 
+    .inner-text Hiển thị 1 - 1 của 1
+    select
+      option(value="") Trang 1
+      option(value="") Trang 2
+      option(value="") Trang 3
+  //- End Section-7
+
+  
+
