@@ -328,8 +328,9 @@ public class StudentService {
         boolean hasRequiredCertificates = hasEnglish && hasIT;
         
         // Determine program type and required credits
-        String programType = student.getProgramType() != null ? student.getProgramType() : "CU_NHAN";
-        int requiredCredits = "KY_SU".equals(programType) ? 150 : 132;
+        // programType not yet implemented in User entity, default to CU_NHAN
+        String programType = "CU_NHAN";
+        int requiredCredits = 132;
         
         // Check eligibility
         boolean hasEnoughCredits = totalCredits >= requiredCredits;
