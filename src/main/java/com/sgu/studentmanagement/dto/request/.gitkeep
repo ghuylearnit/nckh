@@ -1,0 +1,8 @@
+# Request DTOs will be placed here
+
+This folder will contain DTOs for request bodies:
+- CreateStudentRequest
+- UpdateStudentRequest
+- LoginRequest
+- RegisterRequest
+- etc.

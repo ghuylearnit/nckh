@@ -1,0 +1,19 @@
+package com.sgu.studentmanagement.repository;
+
+import com.sgu.studentmanagement.entity.Course;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * CourseRepository - Repository for Course entity
+ */
+@Repository
+public interface CourseRepository extends JpaRepository<Course, Long> {
+    
+    Optional<Course> findByCode(String code);
+    
+    boolean existsByCode(String code);
+}
